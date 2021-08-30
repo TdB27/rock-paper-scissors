@@ -1,2 +1,9 @@
-@import "variables";
-@import "fonts";
+@import 'variables';
+@import 'fonts';
+@import 'global';
+
+#rock-paper-scissors {
+  @import 'header';
+  @import 'cards-game';
+  @import 'rules';
+}
