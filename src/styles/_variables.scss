@@ -1,6 +1,6 @@
 // spacing
-$container_max_width: 1560px;
-$medium_container_width: 580px;
+$container_max_width: 500px;
+$medium_container_width: 280px;
 $gutter_width: 5vw;
 
 // breakpoints
@@ -11,10 +11,15 @@ $mobile: 1200px;
 $Barlow: 'Barlow Semi Condensed', sans-serif;
 
 //colors
-$blue-gradient: hsl(214, 47%, 23%) to hsl(237, 49%, 15%);
-$blue-ligth: hsl(230, 89%, 62%) to hsl(230, 89%, 65%);
-$blue-dark: hsl(229, 64%, 46%);
-$yellow: hsl(39, 89%, 49%) to hsl(40, 84%, 53%);
-$red: hsl(349, 71%, 52%) to hsl(349, 70%, 56%);
+$blue-1: hsl(237, 49%, 15%);
+$blue-2: hsl(214, 47%, 23%);
+$blue-3: hsl(230, 89%, 65%);
+$blue-4: hsl(230, 89%, 62%);
+$blue-5: hsl(229, 64%, 46%);
+
+$yellow-1: hsl(39, 89%, 49%);
+$yellow-2: hsl(40, 84%, 53%);
+$red-1: hsl(349, 71%, 52%);
+$red-2: hsl(349, 70%, 56%);
 $gray: hsl(229, 25%, 31%);
 $gray-ligth: hsl(217, 16%, 45%);

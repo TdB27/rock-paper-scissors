@@ -1,5 +1,5 @@
 body {
-  background-color: $blue-gradient;
+  background: radial-gradient($blue-2, $blue-1);
 }
 
 p {
@@ -11,5 +11,5 @@ p {
 span {
   font-size: 32px;
   font-weight: 700;
-  font-family: $Barlowd;
+  font-family: $Barlow;
 }
