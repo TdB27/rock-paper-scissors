@@ -1,7 +1,8 @@
 // spacing
-$container_max_width: 500px;
-$medium_container_width: 280px;
-$gutter_width: 2vw;
+$container_max_width: 700px;
+$medium_container_width: 649px;
+$minimum_container_width: 150px;
+$gutter_width: 0.5vw;
 
 // breakpoints
 $desktop: 1280px;
@@ -23,3 +24,4 @@ $red-1: hsl(349, 71%, 52%);
 $red-2: hsl(349, 70%, 56%);
 $gray: hsl(229, 25%, 31%);
 $gray-ligth: hsl(217, 16%, 45%);
+$gray-white: hsla(0, 0, 100%, 0.9);
