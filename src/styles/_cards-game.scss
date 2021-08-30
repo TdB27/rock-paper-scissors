@@ -1,0 +1,24 @@
+.cards-game__bg-triangle {
+  max-width: 800px;
+  margin: 50px 70px;
+  display: flex;
+  justify-content: center;
+  background-image: url(../../assets/images/bg-triangle.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.cards-game__bg-triangle__card {
+  width: 300px;
+  height: 300px;
+  border: 5px solid;
+  border-radius: 32px;
+  background-color: #fff;
+}
+
+.cards-game__bg-triangle__card__paper {
+  background-image: url(../../assets/images/icon-paper.svg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: 50%;
+}
