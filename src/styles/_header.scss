@@ -1,19 +1,40 @@
+.header {
+  max-width: $container_max_width;
+  margin: 46px auto 0;
+  border: 2px solid $gray-ligth;
+  border-radius: 10px;
+}
+
+.header-flex {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .header__logo {
-  margin-left: $gutter_width;
-  width: 100%;
+  margin-top: $gutter_width;
+  width: 165px;
+}
+
+.header__logo-img {
+  width: 162px;
 }
 
 .header__score {
-  max-width: medium_container_width;
-  height: 200px;
+  width: $minimum_container_width;
+  background-color: $gray-white;
+  max-height: 105px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  border-radius: 8px;
+  padding: 7px 0;
 }
 
 .header__score__paragraph {
-  color: $blue-dark;
+  color: $blue-5;
 }
 
 .header__score__pontuation {
