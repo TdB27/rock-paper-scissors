@@ -1,5 +1,5 @@
 body {
-  background: radial-gradient($blue-2, $blue-1);
+  background: radial-gradient(ellipse at top, $blue-2, $blue-1);
 }
 
 p {

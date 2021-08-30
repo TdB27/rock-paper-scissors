@@ -1,5 +1,5 @@
 .center {
-  max-width: calc(#{$container_max_width} + #{$gutter_width});
+  max-width: $container_max_width;
   width: 100%;
   margin: 0 auto;
   padding: $gutter_width;
