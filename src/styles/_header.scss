@@ -1,0 +1,21 @@
+.header__logo {
+  margin-left: $gutter_width;
+  width: 100%;
+}
+
+.header__score {
+  max-width: medium_container_width;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.header__score__paragraph {
+  color: $blue-dark;
+}
+
+.header__score__pontuation {
+  color: $gray;
+}
