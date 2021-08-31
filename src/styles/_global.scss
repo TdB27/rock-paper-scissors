@@ -8,6 +8,7 @@ body {
   background: radial-gradient(ellipse at top, $blue-2, $blue-1);
   height: 100vh;
   margin: 0;
+  overflow: hidden;
 }
 
 p {
