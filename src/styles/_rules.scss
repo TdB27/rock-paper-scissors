@@ -1,0 +1,15 @@
+.rules {
+    position: absolute;
+    right: 33px;
+    bottom: 33px;
+}
+
+.rules__button {
+    padding: 6px 36px;
+    border: 2px solid $gray-white;
+    border-radius: 10px;
+}
+
+.rules__button__paragraph {
+    color: $gray-white;
+}
