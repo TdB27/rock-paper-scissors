@@ -2,6 +2,11 @@
     position: absolute;
     right: 33px;
     bottom: 33px;
+
+    @media (max-width: $mobile) {
+        right: 33%;
+        bottom: 56px;
+      }
 }
 
 .rules__button {
