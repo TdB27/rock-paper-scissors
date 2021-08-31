@@ -5,6 +5,7 @@
 }
 
 .cards-game__bg-triangle {
+  display: none;
   max-width: 300px;
   height: 300px;
   margin: 120px auto 0;
@@ -103,5 +104,64 @@
 }
 
 .bg-rock {
+  background-image: url(../../assets/images/icon-rock.svg);
+}
+
+.cards-game__round {
+  display: flex;
+  height: 300px;
+  margin: 60px auto 0;
+}
+
+.cards-game__round__game {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cards-game__round__game__picked {
+  color: #fff;
+}
+
+.cards-game__round__game__image {
+  width: 150px;
+  height: 160px;
+  border: 25px solid;
+  border-radius: 100px;
+  background-color: $gray-white;
+  transform: rotateX(25deg);
+}
+
+.cards-game__round__game__image.player{
+  border-color: $yellow-1;
+  box-shadow: 0 10px 0 0 $yellow-2;
+}
+
+.cards-game__round__game__image.computer{
+  border-color: $red-1;
+  box-shadow: 0 10px 0 0 $red-2;
+}
+
+
+.cards-game__round__game__image-bg{
+  box-shadow: inset 0 10px 0 0 $gray-white;
+  filter: brightness(76%);
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+  opacity: 0.9;
+  background-repeat: no-repeat;
+  background-size: 50%;
+  background-position: 50%;
+}
+
+.cards-game__round__game__image-bg.player {
+  background-image: url(../../assets/images/icon-scissors.svg);
+}
+
+.cards-game__round__game__image-bg.computer {
   background-image: url(../../assets/images/icon-rock.svg);
 }
