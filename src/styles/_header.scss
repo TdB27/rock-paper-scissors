@@ -3,6 +3,11 @@
   margin: 46px auto 0;
   border: 2px solid $gray-ligth;
   border-radius: 10px;
+
+  @media (max-width: $mobile) {
+    margin-top: 30px;
+    padding: 0 14px;
+  }
 }
 
 .header-flex {
@@ -19,6 +24,11 @@
 
 .header__logo-img {
   width: 162px;
+
+  @media (max-width: $mobile) {
+    width: 84px;
+    margin-left: 6px;
+  }
 }
 
 .header__score {
@@ -31,12 +41,25 @@
   justify-content: center;
   border-radius: 8px;
   padding: 7px 0;
+
+  @media (max-width: $mobile) {
+    width: 80px;
+    padding: 4px 0;
+  }
 }
 
 .header__score__paragraph {
   color: $blue-5;
+
+  @media (max-width: $mobile) {
+    font-size: 12px;
+  }
 }
 
 .header__score__pontuation {
   color: $gray;
+
+  @media (max-width: $mobile) {
+    font-size: 41px;
+  }
 }
