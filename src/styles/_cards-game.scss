@@ -1,6 +1,5 @@
 .cards-game {
-  max-width: $container_max_width;
-  margin: 0 auto;
+  max-width: 100vw;
   padding: 0;
 }
 
@@ -108,9 +107,11 @@
 }
 
 .cards-game__round {
+  width: 768px;
   display: flex;
-  height: 300px;
-  margin: 60px auto 0;
+  height: 400px;
+  margin: 44px auto 0;
+  border: 1px solid #fff;
 }
 
 .cards-game__round__game {
@@ -124,29 +125,42 @@
 
 .cards-game__round__game__picked {
   color: #fff;
+  font-size: 29px;
 }
 
 .cards-game__round__game__image {
-  width: 150px;
-  height: 160px;
-  border: 25px solid;
-  border-radius: 100px;
-  background-color: $gray-white;
+  width: 230px;
+  height: 250px;
+  border: 34px solid hsla(0, 0, 100%, 0.5);
+  border-radius: 155px;
+  background-color: $blue-1;
+  opacity: 0.3;
   transform: rotateX(25deg);
 }
 
-.cards-game__round__game__image.player{
+.round-bg {
+  border: 34px solid;
+  background-color: $gray-white;
+  opacity: 1;
+}
+
+.round-bg.picked-paper-border {
   border-color: $yellow-1;
-  box-shadow: 0 10px 0 0 $yellow-2;
+  box-shadow: 0 13px 0 0 $yellow-2;
 }
 
-.cards-game__round__game__image.computer{
+.round-bg.picked-scissors-border {
+  border-color: $yellow-1;
+  box-shadow: 0 13px 0 0 $yellow-2;
+}
+
+.round-bg.picked-rock-border {
   border-color: $red-1;
-  box-shadow: 0 10px 0 0 $red-2;
+  box-shadow: 0 13px 0 0 $red-2;
 }
 
 
-.cards-game__round__game__image-bg{
+.round-bg__image{
   box-shadow: inset 0 10px 0 0 $gray-white;
   filter: brightness(76%);
   width: 100%;
@@ -158,10 +172,14 @@
   background-position: 50%;
 }
 
-.cards-game__round__game__image-bg.player {
+.round-bg__image.picked-paper-card {
+  background-image: url(../../assets/images/icon-paper.svg);
+}
+
+.round-bg__image.picked-scissors-card {
   background-image: url(../../assets/images/icon-scissors.svg);
 }
 
-.cards-game__round__game__image-bg.computer {
+.round-bg__image.picked-rock-card {
   background-image: url(../../assets/images/icon-rock.svg);
 }
