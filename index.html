@@ -14,12 +14,16 @@
     <title>Frontend Mentor | Rock, Paper, Scissors</title>
   </head>
   <body>
-    <div id="rock-paper-scissors" style="height: 100%;">
+    <div id="rock-paper-scissors" style="height: 100%">
       <header class="header">
         <div class="center">
           <div class="header-flex">
             <div class="header__logo">
-              <img class="header__logo-img" src="./assets/images/logo.svg" alt="ROCK PAPER SCISSORS" />
+              <img
+                class="header__logo-img"
+                src="./assets/images/logo.svg"
+                alt="ROCK PAPER SCISSORS"
+              />
             </div>
             <div class="header__score">
               <p class="header__score__paragraph">score</p>
@@ -36,9 +40,7 @@
                 <div class="cards-game__bg-triangle__card-bg bg-paper"></div>
               </div>
               <div class="cards-game__bg-triangle__card absolute-scissors">
-                <div
-                  class="cards-game__bg-triangle__card-bg bg-scissors"
-                ></div>
+                <div class="cards-game__bg-triangle__card-bg bg-scissors"></div>
               </div>
               <div class="cards-game__bg-triangle__card absolute-rock">
                 <div class="cards-game__bg-triangle__card-bg bg-rock"></div>
@@ -48,18 +50,48 @@
           <div class="cards-game__round">
             <div class="cards-game__round__game">
               <p class="cards-game__round__game__picked player">you picked</p>
-              <div class="cards-game__round__game__image round-bg picked-scissors-border">
-                <div class="cards-game__round__game__image-bg round-bg__image picked-scissors-card"></div>
+              <div
+                class="
+                  cards-game__round__game__image
+                  round-bg
+                  picked-scissors-border
+                "
+              >
+                <div
+                  class="
+                    cards-game__round__game__image-bg
+                    round-bg__image
+                    picked-scissors-card
+                  "
+                ></div>
               </div>
             </div>
-            <div class="cards-game__round__box-winner active">
-              <span class="cards-game__round__box-winner__winner">you lose</span>
-              <button class="cards-game__round__box-winner__play-again">play again</button>
+            <div class="cards-game__round__box-winner">
+              <span class="cards-game__round__box-winner__winner"
+                >you lose</span
+              >
+              <button class="cards-game__round__box-winner__play-again">
+                play again
+              </button>
             </div>
             <div class="cards-game__round__game">
-              <p class="cards-game__round__game__picked computer">the house picked</p>
-              <div class="cards-game__round__game__image round-bg picked-rock-border">
-                <div class="cards-game__round__game__image-bg round-bg__image picked-rock-card"></div>
+              <p class="cards-game__round__game__picked computer">
+                the house picked
+              </p>
+              <div
+                class="
+                  cards-game__round__game__image
+                  round-bg
+                  picked-rock-border
+                "
+              >
+                <div
+                  class="
+                    cards-game__round__game__image-bg
+                    round-bg__image
+                    picked-rock-card
+                  "
+                ></div>
               </div>
             </div>
           </div>
@@ -83,6 +115,6 @@
       </main>
     </div>
 
-    <script src="./script.js"></script>
+    <script src="./src/scripts/scripts.js"></script>
   </body>
 </html>
