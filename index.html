@@ -36,13 +36,28 @@
         <section class="cards-game">
           <div class="center">
             <div class="cards-game__bg-triangle">
-              <div class="cards-game__bg-triangle__card absolute-paper">
+              <div
+                id="paper"
+                class="cards-game__bg-triangle__card absolute-paper"
+                onclick="playerPlay('paper')"
+                data-card="paper"
+              >
                 <div class="cards-game__bg-triangle__card-bg bg-paper"></div>
               </div>
-              <div class="cards-game__bg-triangle__card absolute-scissors">
+              <div
+                id="scissors"
+                class="cards-game__bg-triangle__card absolute-scissors"
+                onclick="playerPlay('scissors')"
+                data-card="scissors"
+              >
                 <div class="cards-game__bg-triangle__card-bg bg-scissors"></div>
               </div>
-              <div class="cards-game__bg-triangle__card absolute-rock">
+              <div
+                id="rock"
+                class="cards-game__bg-triangle__card absolute-rock"
+                onclick="playerPlay('rock')"
+                data-card="rock"
+              >
                 <div class="cards-game__bg-triangle__card-bg bg-rock"></div>
               </div>
             </div>
@@ -115,6 +130,7 @@
       </main>
     </div>
 
-    <script src="./src/scripts/scripts.js"></script>
+    <script src="./src/scripts/modal.js"></script>
+    <script src="./src/scripts/main.js"></script>
   </body>
 </html>
