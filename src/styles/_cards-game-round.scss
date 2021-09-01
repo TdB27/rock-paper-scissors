@@ -1,0 +1,117 @@
+.cards-game__round {
+    width: 1015px;
+    //width: 768px;
+    display: flex;
+    height: 400px;
+    margin: 44px auto 0;
+    justify-content: center;
+}
+
+.cards-game__round__game {
+width: 40%;
+height: 100%;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: space-between;
+}
+
+.cards-game__round__game__picked {
+color: #fff;
+font-size: 29px;
+}
+
+.cards-game__round__game__image {
+width: 230px;
+height: 250px;
+border: 34px solid hsla(0, 0, 100%, 0.1);
+border-radius: 155px;
+background-color: $blue-1;
+opacity: 0.3;
+transform: rotateX(25deg);
+}
+
+.round-bg {
+border: 34px solid;
+background-color: $gray-white;
+opacity: 1;
+}
+
+.round-bg.picked-paper-border {
+border-color: $yellow-1;
+box-shadow: 0 13px 0 0 $yellow-2;
+}
+
+.round-bg.picked-scissors-border {
+border-color: $yellow-1;
+box-shadow: 0 13px 0 0 $yellow-2;
+}
+
+.round-bg.picked-rock-border {
+border-color: $red-1;
+box-shadow: 0 13px 0 0 $red-2;
+}
+
+
+.round-bg__image{
+box-shadow: inset 0 10px 0 0 $gray-white;
+filter: brightness(76%);
+width: 100%;
+height: 100%;
+border-radius: 100%;
+opacity: 0.9;
+background-repeat: no-repeat;
+background-size: 50%;
+background-position: 50%;
+}
+
+.round-bg__image.picked-paper-card {
+background-image: url(../../assets/images/icon-paper.svg);
+}
+
+.round-bg__image.picked-scissors-card {
+background-image: url(../../assets/images/icon-scissors.svg);
+}
+
+.round-bg__image.picked-rock-card {
+background-image: url(../../assets/images/icon-rock.svg);
+}
+
+.cards-game__round__box-winner {
+    width: 0;
+    height: 0;
+    visibility: hidden;
+    opacity: 0;
+    transition: 1s;
+}
+
+.cards-game__round__box-winner.active {
+    width: 300px;
+    height: 130px;
+    visibility: visible;
+    opacity: 1;
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 160px;
+}
+
+.cards-game__round__box-winner__winner {
+    text-transform: uppercase;
+    font-size: 57px;
+    color: #fff;
+}
+
+.cards-game__round__box-winner__play-again {
+    width: 221px;
+    height: 50px;
+    color: $blue-2;
+    letter-spacing: 3px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.cards-game__round__box-winner__play-again:hover {
+    color: $red-1;
+}
