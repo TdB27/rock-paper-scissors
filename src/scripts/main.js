@@ -1,7 +1,5 @@
 // iniciar jogo
 playerScore = 0
-computerScore = 0
-match = 0
 
 function game() {
   let selectCard = document.querySelectorAll('[data-card]')
@@ -12,14 +10,11 @@ function game() {
       
       let playerSelect = itemCard
       let computerSelect = computerPlay()
-      
-      /*console.log("o score do player é " + playerScore)
-      console.log("o score do computer é " + computerScore) */
-      match++
-      console.log(match)
 
       playRound(playerSelect, computerSelect)
 
+      let score = document.querySelector('.score')
+      score.innerHTML = playerScore
     })
   })
 }
@@ -35,8 +30,6 @@ function playRound(playerSelect, computerSelect) {
     return console.log("Empate")
   } else if (playerSelect === 'paper'){
     if (computerSelect === 'scissors') {
-      computerScore++
-      console.log("o score do computer é " + computerScore)
       return console.log("computer won")
     } else {
       playerScore++
@@ -45,8 +38,6 @@ function playRound(playerSelect, computerSelect) {
     }
   } else if (playerSelect === 'scissors'){
     if (computerSelect === 'rock') {
-      computerScore++
-      console.log("o score do computer é " + computerScore)
       return console.log("computer won")
     } else {
       playerScore++
@@ -55,8 +46,6 @@ function playRound(playerSelect, computerSelect) {
     }
   } else if (playerSelect === 'rock'){
     if (computerSelect === 'paper') {
-      computerScore++
-      console.log("o score do computer é " + computerScore)
       return console.log("computer won")
     } else {
       playerScore++
