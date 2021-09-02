@@ -21,7 +21,7 @@ function game() {
 
       playRound(playerSelect, computerSelect)
       card(playerSelect, computerSelect)
-
+      
       console.log("player " + playerSelect)
       console.log("computer " + computerSelect)
       
@@ -35,6 +35,10 @@ function game() {
 function card(player, computer){
   const borderPlayer = document.querySelector('.cards-game__round__game__image.player')
   const cardPlayer = document.querySelector('.cards-game__round__game__image-bg.player')
+
+  const borderComputer = document.querySelector('.cards-game__round__game__image.computer')
+  const cardComputer = document.querySelector('.cards-game__round__game__image-bg.computer')
+  
   if(player === 'paper'){
     borderPlayer.classList.add('picked-paper-border')
     cardPlayer.classList.add('picked-paper-card')
@@ -45,9 +49,7 @@ function card(player, computer){
     borderPlayer.classList.add('picked-rock-border')
     cardPlayer.classList.add('picked-rock-card')
   }
-  
-  const borderComputer = document.querySelector('.cards-game__round__game__image.computer')
-  const cardComputer = document.querySelector('.cards-game__round__game__image-bg.computer')
+
   if(computer === 'paper'){
     borderComputer.classList.add('picked-paper-border')
     cardComputer.classList.add('picked-paper-card')
@@ -57,14 +59,14 @@ function card(player, computer){
   } else if(computer === 'rock'){
     borderComputer.classList.add('picked-rock-border')
     cardComputer.classList.add('picked-rock-card')
-  }
-
+  }  
 }
 
 // computer random pick
 function computerPlay() {
   let random = ['rock', 'paper', 'scissors']
   return random[Math.floor(Math.random() * 3)].toLowerCase()
+
 }
 
 //
@@ -95,6 +97,14 @@ function playRound(playerSelect, computerSelect) {
   }
 }
 
-game()
+function playAgain() {
+  const hiddenTriangle = document.querySelector('.cards-game__bg-triangle')
+  const showRound = document.querySelector('.cards-game__round')
+  const showWinner = document.querySelector('.cards-game__round__box-winner')
 
-//quando clicar no player add 
+  hiddenTriangle.classList.remove('hidden-game')
+  showRound.classList.add('hidden-result')
+  showWinner.classList.remove('active')
+}
+
+game()
