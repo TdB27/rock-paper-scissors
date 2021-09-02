@@ -1,4 +1,12 @@
 // start game
+const hiddenTriangle = document.querySelector('.cards-game__bg-triangle')
+const showRound = document.querySelector('.cards-game__round')
+const showWinner = document.querySelector('.cards-game__round__box-winner')
+let spanWinner = document.querySelector('.cards-game__round__box-winner__winner')
+const borderPlayer = document.querySelector('.cards-game__round__game__image.player')
+const cardPlayer = document.querySelector('.cards-game__round__game__image-bg.player')
+const borderComputer = document.querySelector('.cards-game__round__game__image.computer')
+const cardComputer = document.querySelector('.cards-game__round__game__image-bg.computer')
 playerScore = 0
 
 function game() {
@@ -10,10 +18,6 @@ function game() {
 
       let playerSelect = itemCard
       let computerSelect = computerPlay()
-
-      const hiddenTriangle = document.querySelector('.cards-game__bg-triangle')
-      const showRound = document.querySelector('.cards-game__round')
-      const showWinner = document.querySelector('.cards-game__round__box-winner')
 
       hiddenTriangle.classList.add('hidden-game')
       showRound.classList.remove('hidden-result')
@@ -32,13 +36,7 @@ function game() {
 }
 
 // insert the edge and the card to player and computer
-function card(player, computer){
-  const borderPlayer = document.querySelector('.cards-game__round__game__image.player')
-  const cardPlayer = document.querySelector('.cards-game__round__game__image-bg.player')
-
-  const borderComputer = document.querySelector('.cards-game__round__game__image.computer')
-  const cardComputer = document.querySelector('.cards-game__round__game__image-bg.computer')
-  
+function card(player, computer){ 
   if(player === 'paper'){
     borderPlayer.classList.add('picked-paper-border')
     cardPlayer.classList.add('picked-paper-card')
@@ -69,42 +67,55 @@ function computerPlay() {
 
 }
 
-//
+// play game
 function playRound(playerSelect, computerSelect) {
   if(playerSelect === computerSelect) {
-    return console.log("Empate")
+    return spanWinner.innerHTML = 'draw'
   } else if (playerSelect === 'paper'){
     if (computerSelect === 'scissors') {
-      return console.log("computer won")
+      return spanWinner.innerHTML = 'you lose'
     } else {
       playerScore++
-      return console.log("player won")
+      return spanWinner.innerHTML = 'you win'
     }
   } else if (playerSelect === 'scissors'){
     if (computerSelect === 'rock') {
-      return console.log("computer won")
+      return spanWinner.innerHTML = 'you lose'
     } else {
       playerScore++
-      return console.log("player won")
+      return spanWinner.innerHTML = 'you win'
     }
   } else if (playerSelect === 'rock'){
     if (computerSelect === 'paper') {
-      return console.log("computer won")
+      return spanWinner.innerHTML = 'you lose'
     } else {
       playerScore++
-      return console.log("player won")
+      return spanWinner.innerHTML = 'you win'
     }
   }
 }
 
 function playAgain() {
-  const hiddenTriangle = document.querySelector('.cards-game__bg-triangle')
-  const showRound = document.querySelector('.cards-game__round')
-  const showWinner = document.querySelector('.cards-game__round__box-winner')
-
+  removeBorderCard()
   hiddenTriangle.classList.remove('hidden-game')
   showRound.classList.add('hidden-result')
   showWinner.classList.remove('active')
+}
+
+function removeBorderCard(){
+  borderPlayer.classList.remove('picked-paper-border')
+  cardPlayer.classList.remove('picked-paper-card')
+  borderPlayer.classList.remove('picked-scissors-border')
+  cardPlayer.classList.remove('picked-scissors-card')
+  borderPlayer.classList.remove('picked-rock-border')
+  cardPlayer.classList.remove('picked-rock-card')
+
+  borderComputer.classList.remove('picked-paper-border')
+  cardComputer.classList.remove('picked-paper-card')
+  borderComputer.classList.remove('picked-scissors-border')
+  cardComputer.classList.remove('picked-scissors-card')
+  borderComputer.classList.remove('picked-rock-border')
+  cardComputer.classList.remove('picked-rock-card')
 }
 
 game()
