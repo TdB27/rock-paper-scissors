@@ -22,8 +22,27 @@ function computerPlay() {
 }
 
 function playRound(playerSelect, computerSelect) {
-  console.log(`o player escolheu ${playerSelect}`)
-  console.log(`o computer escolheu ${computerSelect}`)
+  if(playerSelect === computerSelect) {
+    return console.log("Empate")
+  } else if (playerSelect === 'paper'){
+    if (computerSelect === 'scissors') {
+      return console.log("computer won")
+    } else {
+      return console.log("player won")
+    }
+  } else if (playerSelect === 'scissors'){
+    if (computerSelect === 'rock') {
+      return console.log("computer won")
+    } else {
+      return console.log("player won")
+    }
+  } else if (playerSelect === 'rock'){
+    if (computerSelect === 'paper') {
+      return console.log("computer won")
+    } else {
+      return console.log("player won")
+    }
+  }
 }
 
 game()
