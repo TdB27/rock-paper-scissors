@@ -4,7 +4,7 @@ function game() {
 
   selectCard.forEach(item => {
     item.addEventListener('click', () => {
-      const itemCard = item.getAttribute('data-card')
+      const itemCard = item.getAttribute('data-card').toLowerCase()
 
       let playerSelect = itemCard
       let computerSelect = computerPlay()
@@ -18,7 +18,7 @@ function game() {
 // computer escolhe aleatoriamente
 function computerPlay() {
   let random = ['rock', 'paper', 'scissors']
-  return random[Math.floor(Math.random() * 3)]
+  return random[Math.floor(Math.random() * 3)].toLowerCase()
 }
 
 function playRound(playerSelect, computerSelect) {
