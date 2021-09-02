@@ -27,6 +27,7 @@
     border-radius: 100px;
     background-color: $gray-white;
     transform: rotateX(25deg);
+    cursor: pointer;
   
     @media (max-width: $mobile) {
       width: 103px;
