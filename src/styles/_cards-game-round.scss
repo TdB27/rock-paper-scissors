@@ -1,24 +1,54 @@
 .cards-game__round {
-    width: 1015px;
-    //width: 768px;
+    max-width: 1015px;
     display: flex;
     height: 400px;
     margin: 44px auto 0;
     justify-content: center;
+
+    @media (max-width: $mobile) {
+        margin-top: 78px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+    }
 }
 
 .cards-game__round__game {
-width: 40%;
-height: 100%;
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: space-between;
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    @media (max-width: $mobile) {
+        width: 100%;
+        height: 190px;
+    }
+}
+
+.cards-game__round__game.player {
+    @media (max-width: $mobile) {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+    }
+}
+
+.cards-game__round__game.computer {
+    @media (max-width: $mobile) {
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+    }
 }
 
 .cards-game__round__game__picked {
 color: #fff;
 font-size: 29px;
+
+    @media (max-width: $mobile) {
+        order: 1;
+        font-size: 20px;
+    }
 }
 
 .cards-game__round__game__image {
@@ -29,27 +59,49 @@ border-radius: 155px;
 background-color: $blue-1;
 opacity: 0.3;
 transform: rotateX(25deg);
+
+    @media(max-width: $mobile) {
+        order: 0;
+        width: 100px;
+        height: 110px;
+    }
 }
 
 .round-bg {
 border: 34px solid;
 background-color: $gray-white;
 opacity: 1;
+    
+    @media(max-width: $mobile) {
+        border-width: 15px;
+    }
 }
 
 .round-bg.picked-paper-border {
-border-color: $yellow-1;
-box-shadow: 0 13px 0 0 $yellow-2;
+    border-color: $blue-4;
+    box-shadow: 0 13px 0 0 $blue-5;
+
+    @media(max-width: $mobile) {
+        box-shadow: 0 5px 0 0 $blue-5;
+    }
 }
 
 .round-bg.picked-scissors-border {
-border-color: $yellow-1;
-box-shadow: 0 13px 0 0 $yellow-2;
+    border-color: $yellow-1;
+    box-shadow: 0 13px 0 0 $yellow-2;
+
+    @media(max-width: $mobile) {
+        box-shadow: 0 5px 0 0 $yellow-2;
+    }
 }
 
 .round-bg.picked-rock-border {
-border-color: $red-1;
-box-shadow: 0 13px 0 0 $red-2;
+    border-color: $red-1;
+    box-shadow: 0 13px 0 0 $red-2;
+
+    @media(max-width: $mobile) {
+        box-shadow: 0 5px 0 0 $red-2;
+    }
 }
 
 
@@ -63,6 +115,10 @@ opacity: 0.9;
 background-repeat: no-repeat;
 background-size: 50%;
 background-position: 50%;
+
+@media(max-width: $mobile) {
+    box-shadow: inset 0 5px 0 0 $gray-white;
+}
 }
 
 .round-bg__image.picked-paper-card {
@@ -95,6 +151,12 @@ background-image: url(../../assets/images/icon-rock.svg);
     flex-direction: column;
     align-items: center;
     margin-top: 160px;
+
+    @media (max-width: $mobile) {
+        grid-column: 1 / 3;
+        grid-row: 2 / 3;
+        margin-top: 40px;
+    }
 }
 
 .cards-game__round__box-winner__winner {
