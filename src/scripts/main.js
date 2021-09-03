@@ -28,9 +28,6 @@ function game() {
       playRound(playerSelect, computerSelect)
       card(playerSelect, computerSelect)
       
-      console.log("player " + playerSelect)
-      console.log("computer " + computerSelect)
-      
       let score = document.querySelector('.score')
       score.innerHTML = playerScore
     })
