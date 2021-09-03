@@ -7,6 +7,8 @@ const borderPlayer = document.querySelector('.cards-game__round__game__image.pla
 const cardPlayer = document.querySelector('.cards-game__round__game__image-bg.player')
 const borderComputer = document.querySelector('.cards-game__round__game__image.computer')
 const cardComputer = document.querySelector('.cards-game__round__game__image-bg.computer')
+const borderPlayerWinner = document.querySelector('.cards-game__round__game__before.player')
+const borderComputerWinner = document.querySelector('.cards-game__round__game__before.computer')
 playerScore = 0
 
 function game() {
@@ -70,26 +72,40 @@ function computerPlay() {
 // play game
 function playRound(playerSelect, computerSelect) {
   if(playerSelect === computerSelect) {
+    borderPlayerWinner.classList.remove('winner')
+      borderComputerWinner.classList.remove('winner')
     return spanWinner.innerHTML = 'draw'
   } else if (playerSelect === 'paper'){
     if (computerSelect === 'scissors') {
+      borderComputerWinner.classList.add('winner')
+      borderPlayerWinner.classList.remove('winner')
       return spanWinner.innerHTML = 'you lose'
     } else {
       playerScore++
+      borderPlayerWinner.classList.add('winner')
+      borderComputerWinner.classList.remove('winner')
       return spanWinner.innerHTML = 'you win'
     }
   } else if (playerSelect === 'scissors'){
     if (computerSelect === 'rock') {
+      borderComputerWinner.classList.add('winner')
+      borderPlayerWinner.classList.remove('winner')
       return spanWinner.innerHTML = 'you lose'
     } else {
       playerScore++
+      borderPlayerWinner.classList.add('winner')
+      borderComputerWinner.classList.remove('winner')
       return spanWinner.innerHTML = 'you win'
     }
   } else if (playerSelect === 'rock'){
     if (computerSelect === 'paper') {
+      borderComputerWinner.classList.add('winner')
+      borderPlayerWinner.classList.remove('winner')
       return spanWinner.innerHTML = 'you lose'
     } else {
       playerScore++
+      borderPlayerWinner.classList.add('winner')
+      borderComputerWinner.classList.remove('winner')
       return spanWinner.innerHTML = 'you win'
     }
   }

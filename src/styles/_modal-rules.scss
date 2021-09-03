@@ -11,6 +11,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 1000;
 
     @media (max-width: $mobile) {
         background-color: hsla(0, 0%, 100%, 1);
