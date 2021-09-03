@@ -1,6 +1,7 @@
 # Frontend Mentor - Rock, Paper, Scissors solution
 
 This is a solution to the [Rock, Paper, Scissors challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/rock-paper-scissors-game-pTgwgvgH).
+<br />
 My solution: 
 
 ## Table of contents
@@ -53,7 +54,6 @@ Neste projeto usei o DOM para interação do usuário com jogo
 ### Useful resources - Recursos úteis
 
 - [Conceitos de Grid](https://developer.mozilla.org/pt-BR/docs/Web/CSS/grid)
-- [Callback](https://developer.mozilla.org/pt-BR/docs/Glossary/Callback_function)
 - [Callback](https://developer.mozilla.org/pt-BR/docs/Glossary/Callback_function)
 
 ## Author - Autor
