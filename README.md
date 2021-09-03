@@ -20,11 +20,17 @@ My solution:
 
 ### The challenge - O desafio
 
-Os usuários devem ser capazes de:
+Users must be able to:
+<br />Os usuários devem ser capazes de:
 
-- Visualize o layout ideal para o site, dependendo do tamanho da tela do dispositivo
-- Jogar o jogo clicando em umas das caixa (paper, scissors ou rock)
-- Ver estados de hover no button 'Play again'
+- View the optimal layout for the website depending on your device's screen size
+<br />Visualize o layout ideal para o site, dependendo do tamanho da tela do dispositivo
+
+- Play the game by clicking on one of the boxes (paper, scissors or rock)
+<br />Jogar o jogo clicando em umas das caixa (paper, scissors ou rock)
+
+- See hover states on the 'Play again' button
+<br />Ver estados de hover no button 'Play again'
 
 ### Screenshot
 
@@ -42,6 +48,7 @@ Os usuários devem ser capazes de:
 
 - Semantic HTML5 markup
 - Propriedades personalizadas CSS
+- SASS
 - Flexbox
 - Design responsivo
 - Um pouco de grid no design responsivo
@@ -49,7 +56,8 @@ Os usuários devem ser capazes de:
 
 ### What I learned - O que eu aprendi
 
-Neste projeto usei o DOM para interação do usuário com jogo
+In this project I used the DOM for user interaction with the game, and for design I'm learning to use SASS
+<br />Neste projeto usei o DOM para interação do usuário com o jogo, e para o design estou aprendendo a usar o SASS
 
 ### Useful resources - Recursos úteis
 
