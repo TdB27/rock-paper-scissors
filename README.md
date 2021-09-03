@@ -2,7 +2,7 @@
 
 This is a solution to the [Rock, Paper, Scissors challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/rock-paper-scissors-game-pTgwgvgH).
 <br />
-My solution: 
+My solution: https://tdb27.github.io/rock-paper-scissors/
 
 ## Table of contents
 
@@ -34,12 +34,19 @@ Users must be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+<p align="center">
+  Screenshot to mobile (375px)
+  <br />
+  <img src="https://github.com/TdB27/rock-paper-scissors/blob/main/assets/screenshots/Screenshot_mobile.png" width="350" alt="Screenshot to mobile">
+  <br />
+  Screenshot to desktop (1366px)
+  <img src="https://github.com/TdB27/rock-paper-scissors/blob/main/assets/screenshots/Screenshot_desktop.png" width="100%" alt="Screenshot to desktop">
+</p>
 
 
 ### Links
 
-- Solution URL: [My solution](https://your-solution-url.com)
+- Solution URL: [My solution](https://tdb27.github.io/rock-paper-scissors/)
 - Live Site URL: [My code](https://github.com/TdB27/rock-paper-scissors)
 
 ## My process - Meu processo
